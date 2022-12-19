@@ -93,7 +93,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/font-awesome/font-awesome.scss",
+              "node_modules/bootstrap/bootstrap.scss"
+              
             ],
             "scripts": []
           }
