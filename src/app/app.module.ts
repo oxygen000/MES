@@ -9,6 +9,12 @@ import { ComponentsComponent } from './components/components.component';
 import { PrototypeComponent } from './prototype/prototype.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { ManufacturingComponent } from './manufacturing/manufacturing.component';
+import { MachinesComponent } from './machines/machines.component';
+import { PlanningComponent } from './planning/planning.component';
+
 
 const appRoute: Routes =[
   {path: 'Home', component:HomeComponent},
@@ -17,6 +23,10 @@ const appRoute: Routes =[
   {path: 'Components', component:ComponentsComponent},
   {path: 'Prototype', component:PrototypeComponent},
   {path: 'Header', component:HeaderComponent},
+  {path: 'Dashboard', component:DashboardComponent},
+  {path: 'Resources', component:ResourcesComponent},
+  {path: 'Manufacturing', component:ManufacturingComponent},
+  {path: 'Machines', component:MachinesComponent},
   {path: '', redirectTo:'Home', pathMatch:'full'},
 ]
 @NgModule({
@@ -27,7 +37,13 @@ const appRoute: Routes =[
     ComponentsComponent,
     PrototypeComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    DashboardComponent,
+    ResourcesComponent,
+    ManufacturingComponent,
+    MachinesComponent,
+    PlanningComponent,
+    
   ],
   imports: [
     BrowserModule,
