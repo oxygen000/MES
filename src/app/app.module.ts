@@ -16,6 +16,10 @@ import { MachinesComponent } from './machines/machines.component';
 import { PlanningComponent } from './planning/planning.component';
 
 
+
+
+
+
 const appRoute: Routes =[
   {path: 'Home', component:HomeComponent},
   {path: 'singin', component:SingInComponent},
@@ -44,13 +48,19 @@ const appRoute: Routes =[
     MachinesComponent,
     PlanningComponent,
     
+    
+    
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute),
+   
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
+
 
 })
 export class AppModule { }
