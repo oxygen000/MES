@@ -14,6 +14,7 @@ import { ResourcesComponent } from './resources/resources.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { MachinesComponent } from './machines/machines.component';
 import { PlanningComponent } from './planning/planning.component';
+import { NavComponent } from './nav/nav.component';
 
 
 
@@ -47,6 +48,7 @@ const appRoute: Routes =[
     ManufacturingComponent,
     MachinesComponent,
     PlanningComponent,
+    NavComponent,
     
     
     

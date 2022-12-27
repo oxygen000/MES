@@ -3,39 +3,26 @@
         <app-header></app-header>
     </div>
     <div class="dashboard">
-        
             <nav>
-                <div class="factory-name">
-                    <img class="icons-1" src="../assets/nav/hotel-solid.svg" width="23px" alt="">
-                    <p>Factory Name</p>
-                    <img class="icons-2" src="../assets/nav/chevron-down-solid.svg" width="12" alt="">
-                </div>
-                <div class="setting">
-                    <img src="../assets/nav/pereformance.svg" alt="">
-                </div>
-                <div>
-                    <img class="machine" src="../assets/nav/machine.svg" width="23" height="22" alt="">
-                </div>
-                    <div class="day">
-                        <p class="today">Today</p>
-                        <p>Yesterday</p>
-                        <p>Last Week</p>
-                        <img class="day-icon" src="../assets/nav/calendar-day-solid.svg" width="23" height="22" alt="">
-                    </div>
+                <app-nav></app-nav>
             </nav>
+            <!--Total Productioa-->
             <div class="titel">
                 <h3>Dashboard</h3>
             </div>
         <div class="total-productioa">
-            <div class="titel-2">
-            <img src="../assets/nav/product.svg" width="24" height="24" alt="">
-            <p>Total Production</p>
-            <section>
-                <p>5,000 <samp>km</samp></p>
-            </section>
+            
+            <img src="../assets/dashboard/product.svg" width="24" height="24" alt="">
+            <p class="p-1">Total Production</p>
+            <p class="p-2">5,000 <samp>km</samp></p>
+            <p class="p-3">Actual Production</p>
+            <p class="p-4">7,000 <samp>km</samp></p>
+            <p class="p-5">Planned Production</p>
+            <progress value="70" max="100"></progress>
+            <p class="p-6">75%</p>
             </div>
         </div>
-    </div>
-    
+        <!--end Total Productioa-->
+
 
 </body>

@@ -5,109 +5,7 @@ body{
     background: var(--unnamed-color-f4f7fe) 0% 0% no-repeat padding-box;
     background: #F4F7FE 0% 0% no-repeat padding-box;
 }
-//nav//
-nav{
-    display: flex;
-    width:86vw;
-    height: 35px;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #272D3B33;
-    
-}
-.factory-name{
-    display: flex;
-    background: var(--unnamed-color-2d62ed4d) 0% 0% no-repeat padding-box;
-    background: #2D62ED4D 0% 0% no-repeat padding-box;
-    border-radius: 8px;
-    margin-left: 30px;
-    text-align: center;
-    width: 214px;
-    height: 30px;
-    .icons-1{
-        margin-left:5px;
-        text-align: center;
-        cursor: pointer;
-        
-    }
-    p{
-    margin-left: 25px;
-    margin-top: 5px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-2d62ed);
-    text-align: left;
-    font: normal normal 600 16px/19px Montserrat;
-    letter-spacing: 0px;
-    color: #2D62ED;
-    text-align: center;
-    
-    cursor: pointer;
-    }
-    .icons-2{
-        margin-left: 50px;
-        cursor: pointer;
-    }
-    
-}
-.setting{
-    width: 34px;
-    height: 30px;
-    text-align: center;
-    background: var(--unnamed-color-2d62ed4d) 0% 0% no-repeat padding-box;
-    background: #2D62ED4D 0% 0% no-repeat padding-box;
-    border-radius: 8px;
-    margin-left: 44px;
-    cursor: pointer;
-    }
-    .machine{
-        margin-left:22px ;
-        margin-top: 5px;
-        cursor: pointer;
-    }
-    .day{
-        display: flex;
-        margin-left: 550px;
-        margin-top: 5px;
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-b2bec3);
-    text-align: left;
-    font: normal normal 600 16px/19px Montserrat;
-    letter-spacing: 0px;
-    color: #B2BEC3;
-    opacity: 1;
-        
-        p{
-            margin:0  44px;
-            display: flex;
-            cursor: pointer;
-        }
-        .today{
-            text-align: center;
-            padding-left: 25px;
-            margin-left: 10px;
-            align-items: center;
-            width: 87px;
-            height: 25px;
-            background: var(--unnamed-color-2d62ed4d) 0% 0% no-repeat padding-box;
-            background: #2D62ED4D 0% 0% no-repeat padding-box;
-            border-radius: 8px;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-2d62ed);
-            text-align: left;
-            font: normal normal 600 16px/19px Montserrat;
-            letter-spacing: 0px;
-            color: #2D62ED;
-            cursor: pointer;
-        }
-        .day-icon{
-            cursor: pointer;
-            
-        }
-}
-//nav end//
+
 .titel{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat);
     letter-spacing: var(--unnamed-character-spacing-0);
@@ -123,19 +21,27 @@ nav{
     width: 99px;
     height: 19;
 }
+//Total Productioa//
 .total-productioa{
-    display: flex;
-    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 350px;
     height: 150px;
-    background-color: #00aeff;
-    .titel-2{
-        display: flex;
-        margin-top: 15px;
-        margin-left: 25px;
-        p{
-            font-size: 14px;
-    margin-left: 10px;
-    margin-top: 3px;
+    margin-left: 30px;
+    img{
+        display: grid;
+        grid-column: 2;
+        grid-row:2 ;
+        margin-left:50px ;
+    }
+    .p-1{
+    display: grid;
+    width: 120px;
+    height: 1;
+    grid-column: 4;
+    grid-row:2 ;
+    font-size: 14px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-montserrat);
     letter-spacing: var(--unnamed-character-spacing-0-28);
     color: var(--unnamed-color-000000);
@@ -143,9 +49,83 @@ nav{
     font: normal normal medium 14px/18px Montserrat;
     letter-spacing: 0.28px;
     color: #000000;
+    }
+    .p-2{
+    display: grid;
+    grid-column:2 ;
+    grid-row: 5;
+    font-size: 21px;
+    text-align: left;
+    font: normal normal medium 21px/15px Montserrat;
+    letter-spacing: 0.42px;
+    color: #000000;
+    grid-template-columns: repeat(4, 1fr);
+    samp{
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 12px;
+    
+    }
+    }
+    .p-3{
+    display: grid;
+    grid-row:6 ;
+    grid-column: 2;
+    font-size: 10px;
+    font: var(--unnamed-font-style-normal) normal 300 10px/12px var(--unnamed-font-family-montserrat);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-2d62ed);
+    text-align: left;
+    font: normal normal 300 10px/12px Montserrat;
+    letter-spacing: 0px;
+    color: #2D62ED;
+    opacity: 1;
+    }
+    .p-4{      
+        display: grid;
+        grid-column:5 ;
+        grid-row: 5;
+        font-size: 21px;
+        text-align: right;
+        font: normal normal medium 21px/15px Montserrat;
+        letter-spacing: 0.42px;
+        color: #000000;
+        grid-template-columns: repeat(4, 1fr);
+        samp{
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+        font-size: 12px;
+    }
+    }
+    .p-5{
+        display: grid;
+        width: 80px;
+        grid-column: 5;
+        grid-row: 6;
+        text-align: center;
+        font-size: 10px;
+        font: var(--unnamed-font-style-normal) normal 300 10px/12px var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal 300 10px/12px Montserrat;
+        letter-spacing: 0px;
+        color: #9D9D9D;
         }
-    }
-    section{
-        
-    }
+        progress{
+            margin-top: 6px;
+            text-align: center;
+            grid-row: 8;
+            grid-column:4 ;
+            
+        }
+        .p-6{
+            
+            text-align: center;
+            font-size: 24px;
+            grid-column:5 ;
+            grid-row: 8;
+        }
 }
+// end Total Productioa //
