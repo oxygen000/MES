@@ -21,6 +21,9 @@ body{
     width: 99px;
     height: 19;
 }
+.top{
+    display: flex;
+}
 //Total Productioa//
 .total-productioa{
     display: grid;
@@ -129,3 +132,39 @@ body{
         }
 }
 // end Total Productioa //
+//Performance Indicator//
+.performance-indicator{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 350px;
+    height: 150px;
+    margin-left: 30px;
+    background-color: #2D62ED;
+    img{
+        display: grid;
+        grid-column: 1;
+        grid-row:2 ;
+        margin-left:50px ;
+    }
+    p{
+        font-size: 14px;
+        text-align: center;
+        align-items: center;
+        width: 160px;
+        display: grid;
+        grid-column: 3;
+        grid-row:2 ;
+    }
+    .bar-1{
+        display: grid;
+        grid-row: 8;
+        position: relative;
+        height: 90px;
+        height: 30px;
+        background-color: conic-gradient (#000000 3.6deg, #ededed 0deg);
+        border-radius: 50%;
+
+    }
+}
+// end Performance Indicator//
