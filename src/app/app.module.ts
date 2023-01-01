@@ -15,6 +15,11 @@ import { ManufacturingComponent } from './manufacturing/manufacturing.component'
 import { MachinesComponent } from './machines/machines.component';
 import { PlanningComponent } from './planning/planning.component';
 import { NavComponent } from './nav/nav.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
+
+
+
 
 
 
@@ -49,16 +54,23 @@ const appRoute: Routes =[
     MachinesComponent,
     PlanningComponent,
     NavComponent,
-    
-    
-    
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoute),
-   
-    
-    
+    // Specify ng-circle-progress as an import
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 75,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#00D1DE",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      
+
+      
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

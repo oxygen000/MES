@@ -25,10 +25,51 @@
             <!--end Total Productioa-->
             <!--Performance Indicator-->
             <div class="performance-indicator">
-                <img src="../assets/dashboard/pereformance.svg" width="24" height="24" alt="">
-                <p>Performance Indicator KPI</p>
-                <span class="bar-1">0%</span>
+            <img src="../assets/dashboard/pereformance.svg" width="24" height="24" alt="">
+            <p>Performance Indicator KPI</p>
+            <circle-progress class="circular-bar-1"
+            [percent]="75"
+            [radius]="20"
+            [outerStrokeWidth]="3"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#00D1DE'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle] = 'false'
+            [showInnerStroke] = 'false'
+            > </circle-progress>
+            <p class="p-circular-bar-1">Avalability</p>
+
+            <circle-progress class="circular-bar-2"
+            [percent]="68"
+            [radius]="20"
+            [outerStrokeWidth]="3"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#00D1DE'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle] = 'false'
+            [showInnerStroke] = 'false'
+            > </circle-progress>
+            <p class="p-circular-bar-2">Preformance</p>
+
+            <circle-progress class="circular-bar-3"
+            [percent]="25"
+            [radius]="20"
+            [outerStrokeWidth]="3"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#EC5967 '"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle] = 'false'
+            [showInnerStroke] = 'false'
+            > </circle-progress>
+            <p class="p-circular-bar-3">Quality</p>
             </div>
+            
             <!-- end Performance Indicator-->
 
             </div>

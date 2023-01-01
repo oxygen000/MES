@@ -39,6 +39,7 @@ body{
         margin-left:50px ;
     }
     .p-1{
+    margin-top: 3px;
     display: grid;
     width: 120px;
     height: 1;
@@ -140,31 +141,91 @@ body{
     width: 350px;
     height: 150px;
     margin-left: 30px;
-    background-color: #2D62ED;
+
     img{
+        margin-top: 3px;
         display: grid;
         grid-column: 1;
         grid-row:2 ;
         margin-left:50px ;
     }
     p{
+        margin-top: 3px;
         font-size: 14px;
         text-align: center;
         align-items: center;
         width: 160px;
         display: grid;
-        grid-column: 3;
+        grid-column: 2;
         grid-row:2 ;
     }
     .bar-1{
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         display: grid;
+        text-align: end;
         grid-row: 8;
-        position: relative;
-        height: 90px;
-        height: 30px;
-        background-color: conic-gradient (#000000 3.6deg, #ededed 0deg);
-        border-radius: 50%;
-
+        
+        h4{
+            grid-row: 2;
+            grid-column: 2;
+            width: 0;
+            height: 15px;
+            
+        }
+        
+        p{
+            display: grid;
+            grid-row: 4;
+            grid-column: 1;
+            width: 0;
+            margin-left: 15px;
+            height: 15px;
+            
+        }
+        
     }
+    .circular-bar-1{
+        width: 50px;
+        display: grid;
+        grid-row: 7;
+        grid-column:1;
+        
+    }
+        .p-circular-bar-1{
+            display: grid;
+            grid-row: 8;
+            grid-column:1;
+            width: 0;
+        }
+        .circular-bar-2{
+            margin-left: 50px;
+            width: 50px;
+            display: grid;
+            grid-row: 7;
+            grid-column:2;
+            
+        }
+            .p-circular-bar-2{
+                margin-left: 50px;
+                display: grid;
+                grid-row: 8;
+                grid-column:2;
+                width: 0;
+            }
+            .circular-bar-3{
+                width: 50px;
+                display: grid;
+                grid-row: 7;
+                grid-column:4;
+                
+            }
+                .p-circular-bar-3{
+                    display: grid;
+                    grid-row: 8;
+                    grid-column:4;
+                    width: 0;
+                }
 }
 // end Performance Indicator//
