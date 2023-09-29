@@ -1,0 +1,41 @@
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1);@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Moon+Dance&family=Rubik+Bubbles&display=swap');
+$text-shadow: 6px 5px 8px #000000;;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  
+
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  
+  
+  &::-webkit-scrollbar{
+      width: 0.5rem;
+      
+  }
+  
+  &::-webkit-scrollbar-track{
+      background: #f4f7fe;
+  }
+  &::-webkit-scrollbar-thumb{
+      background: #003f5c;
+      border-radius: 60px;
+  }
+  &::-webkit-scrollbar-thumb:hover{
+      background: #2d62ed;
+  }
+}

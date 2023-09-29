@@ -1,0 +1,260 @@
+<body>
+    <div class="nav-comb">
+        <app-header></app-header>
+    </div>
+    <div class="dashboard">
+            <nav>
+                <app-nav></app-nav>
+                <div class="titel">
+                    <h3>Dashboard</h3>
+                </div>
+            </nav>
+        <div class="top">
+            <!--Total Productioa-->
+            <div class="total-productioa">
+                <img src="../assets/dashboard/product.svg" width="24" height="24" alt="">
+                <p class="p-1">Total Production</p>
+                <p class="p-2">5,000 <samp>km</samp></p>
+                <p class="p-3">Actual Production</p>
+                <p class="p-4">7,000 <samp>km</samp></p>
+                <p class="p-5">Planned Production</p>
+                <progress value="70" max="100"></progress>
+                <p class="p-6">75%</p>
+            </div>
+            <!--end Total Productioa-->
+            <!--Performance Indicator-->
+            <div class="performance-indicator">
+            <img src="../assets/dashboard/pereformance.svg" width="24" height="24" alt="">
+            <p>Performance Indicator KPI</p>
+            <circle-progress class="circular-bar-1"
+            [percent]="75"
+            [radius]="20"
+            [outerStrokeWidth]="3"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#00D1DE'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle] = 'false'
+            [showInnerStroke] = 'false'
+            > </circle-progress>
+            <p class="p-circular-bar-1">Avalability</p>
+
+            <circle-progress class="circular-bar-2"
+            [percent]="68"
+            [radius]="20"
+            [outerStrokeWidth]="3"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#00D1DE'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle] = 'false'
+            [showInnerStroke] = 'false'
+            > </circle-progress>
+            <p class="p-circular-bar-2">Preformance</p>
+
+            <circle-progress class="circular-bar-3"
+            [percent]="25"
+            [radius]="20"
+            [outerStrokeWidth]="3"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#EC5967 '"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle] = 'false'
+            [showInnerStroke] = 'false'
+            > </circle-progress>
+            <p class="p-circular-bar-3">Quality</p>
+            </div>
+            <!-- end Performance Indicator-->
+            <!--Material Consumption-->
+            <div class="material-consumption total-productioa">
+            <img src="../assets/dashboard/Material.svg" width="24" height="24" alt="">
+            <p class="p-1">Material Consumption</p>
+            <p class="p-2">5,000 <samp>km</samp></p>
+            <p class="p-3">Actual Production</p>
+            <p class="p-4">7,000 <samp>km</samp></p>
+            <p class="p-5">Planned Production</p>
+            <progress value="70" max="100"></progress>
+            <p class="p-6">75%</p>
+</div>
+<!--end Material Consumption-->
+
+</div>
+
+            <!--Alerts-->
+        <div class="alerts">
+            <div class="alerts-top">
+                <h4 class="boint"><samp class="alerts-p">Alerts</samp></h4>
+            
+            </div>
+            <hr>
+            <div class="section-1"><img src="../assets/dashboard/Resources.svg" width="25" height="25" alt="">
+                <p class="p1">Warehouse</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+            <div class="section-2"><img src="../assets/dashboard/machine.svg" width="25" height="25" alt="">
+                <p class="p1">machine</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+            <div class="section-3"><img src="../assets/dashboard/machine.svg" width="25" height="25" alt="">
+                <p class="p1">machine</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+            <div class="section-4"><img src="../assets/dashboard/machine.svg" width="25" height="25" alt="">
+                <p class="p1">machine</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+        <div class="section-5"><img src="../assets/dashboard/pereformance.svg" width="25" height="25" alt="">
+        <p class="p1">Preformance</p>
+        <p class="p2">Low production yield count</p>
+        <p class="p3">ID</p>
+        <p class="p4">4017702</p>
+    </div>
+    
+        </div>
+        <!--end Alerts-->
+        <!-- Notifications-->
+        <div class="notifications alerts">
+            <div class="alerts-top">
+                <h4 class=" boint-2"><samp class="alerts-p">Notifications</samp></h4>
+            </div>
+            <hr>
+            <div class="section-1"><img src="../assets/dashboard/ready.svg" width="25" height="25" alt="">
+                <p class="p1">Done</p>
+                <p class="p2">Job Order is Ready</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+            <div class="section-2"><img src="../assets/dashboard/product.svg" width="25" height="25" alt="">
+                <p class="p1">Product</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+            <div class="section-3"><img src="../assets/dashboard/product.svg" width="25" height="25" alt="">
+                <p class="p1">Product</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+            <div class="section-4"><img src="../assets/dashboard/product.svg" width="25" height="25" alt="">
+                <p class="p1">Product</p>
+                <p class="p2">Confirm mass on machine</p>
+                <p class="p3">ID</p>
+                <p class="p4">4017702</p>
+            </div>
+    <div class="section-5"><img src="../assets/dashboard/product.svg" width="25" height="25" alt="">
+        <p class="p1">Product</p>
+        <p class="p2">Low production yield count</p>
+        <p class="p3">ID</p>
+        <p class="p4">4017702</p>
+    </div>
+    
+        </div>
+        <!--end Notifications-->
+        <!--Current Activity-->
+<div class="current-activity">
+    <div class="nav">
+        <div class="titel-current-activity">
+        <img src="../assets/dashboard/Activity.svg" width="22" height="22" alt="">
+        <p>Current Activity</p>
+        </div>
+        
+        <div class="Function">
+            <fa-icon [icon]="faSliders" class="fa-2x "></fa-icon> 
+            <p>Function </p>
+            
+        </div>
+        <div class="Route">
+            <fa-icon [icon]="faRoute" class="fa-2x "></fa-icon> 
+            <p>Route</p>
+        </div>
+        <div class="job-order">
+            <img src="../assets/dashboard/job order.svg" width="22" height="22" alt="">
+            <p>Job Order</p>
+        </div>
+        <div class="end">
+            <div class="assembly">
+            <h3>Assembly</h3>
+            <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+            <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            <h4 class="boint-3"><samp class="assembly-p">Assembly 2200 - Assembly/Wire Armoring</samp></h4>
+            </div>
+            <div class=" assembly-armoring">
+                <h3>Assembly-Armoring</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+            <div class="drawing">
+                <h3>Drawing</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-3"><samp class="assembly-p">Kabmak - Armoring - Steel Tape</samp></h4>
+            </div>
+            <div class="extrusion">
+                <h3>Extrusion</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-3"><samp class="assembly-p">Kabmak - Armoring - Steel Tape</samp></h4>
+            </div>
+            <div class="insulation">
+                <h3>Insulation</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-3"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-4"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-5"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-6"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+            <div class="insulation-Extrusion">
+                <h3>Insulation-Extrusion</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-3"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-4"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+            <div class="armoring">
+                <h3>Armoring</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-3"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-4"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-5"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-6"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+            <div class="lead">
+                <h3>Lead</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+            <div class="screening">
+                <h3>Screening</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+            <div class="stranding">
+                <h3>Stranding</h3>
+                <h4 class="boint-1"><samp class="assembly-p">Pourtier 2200/2 Low Voltage - Assembly</samp></h4>
+                <h4 class="boint-2"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+                <h4 class="boint-3"><samp class="assembly-p">Pourtier 2600/4 - Assembly - Medium Voltage</samp></h4>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+<!--end Current Activity-->
+        </div>
+        
+</body>

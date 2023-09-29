@@ -1,0 +1,29 @@
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1);@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Moon+Dance&family=Rubik+Bubbles&display=swap');
+$text-shadow: 6px 5px 8px #000000;;
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: var(--unnamed-color-f4f7fe) 0% 0% no-repeat padding-box;
+    background: #F4F7FE 0% 0% no-repeat padding-box;
+}
+.top{
+margin-top: 20px;
+margin-bottom: 26px;
+a{
+    cursor: pointer;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-272d3b);
+text-align: center;
+font: normal normal bold 20px/24px Montserrat;
+letter-spacing: 0px;
+color: #272D3B;
+text-transform: uppercase;
+opacity: 1;
+margin-left: 150px;
+&::before{
+    background-color: #2D62ED ;
+}
+    }
+}
